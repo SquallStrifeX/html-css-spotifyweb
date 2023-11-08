@@ -11,8 +11,9 @@ body {
 /* Container and Row */
 
 .player{
+    position: fixed;
     height: 75px;
-    max-width: 100%;
+    width: 100%;
     background-color: rgba(40,40,40,255);
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,121 @@ body {
 .sidebar{
     width: 200px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sidebar-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon_sidebar{
+    width: 10%;
+    color: color: rgba(111,114,118,255);
+    vertical-align: middle;
+}
+
+.li_sidebar{
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ul_sidebar{
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    list-style: none;
+}
+
+.spotify-logo{
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+
+}
+
+.text-sidebar{
+    color: rgba(111,114,118,255);
+    font-size: 10px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.playlist-title{
+    color: white;
+    font-weight: bolder;
+    padding: 0px 10px 15px 10px;
+    font-size: 12px;
+}
+
+.crea-playlist{
+    color: rgba(111,114,118,255);
+    padding: 10px 7px 10px 10px;
+    transform: scale(1.2);
+}
+
+.title-text-playlist{
+    color: rgba(111,114,118,255);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.nome-text-playlist{
+    color: rgba(111,114,118,255);
+    font-weight: bolder;
+    font-size: 10px;
+    padding: 10px;
+    list-style: none;
+    
+}
+
+.scroll-playlist{
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.li-nome-text-playlist{
+    margin: 15px 0px;
+}
+
+.sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.install-app{
+    margin-bottom: 10px;
+}
+.download-img{
+    width: 10%;
+    vertical-align: middle;
+    color: rgba(111,114,118,255);
+}
+
+.profile{
+    margin-top: 10px;
+
+}
+
+.img-profile{
+    width: 13%;
+    background-color: gray;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.john-doe{
+    color: white;
+    font-weight: bolder;
+    vertical-align: middle;
+    margin-left: 5px;
+
 }
 
 .main_content{
@@ -38,12 +154,12 @@ body {
 
 .header{
     height: 75px;
-    width: 100%;
+    width: calc(100vw - 200px);
+    margin-left: 200px;
     background-color: rgba( 0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
-    position: relative;
 }
 
 .button_header{
@@ -63,6 +179,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 75px;
     
 }
 
@@ -262,10 +379,48 @@ body {
     font-weight: bolder;
 }
 
+.sidebar-top-576{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.img-side-576{
+    width: 50%;
+    margin-top: 5px;    
+}
+
+.sidebar-bottom-576{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.img-download-576{
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.img-profile-576{
+    width: 40%;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
 /* COMMON CLASS */
 
+.color_white{
+    color: white;
+}
 .d_flex{
     display: flex;
+}
+
+.d_none {
+    display: none;
 }
 
 .align-self_center{
@@ -297,6 +452,9 @@ body {
     flex-direction: column;
 }
 
+.margin-bottom_10{
+    margin-bottom: 10px;
+}
 /* MEDIA QUERY */
 
 @media  screen and (max-width: 768px) {
@@ -344,5 +502,31 @@ body {
         margin-left: 5px;
     }
 
+    .sidebar{
+        width: 50px;
+    }
+
+    .d_none576{
+        display: none;
+    }
+
+    .main_content{
+        width: calc(100% - 50px);
+
+    }
+
+    .d_none{
+        display: flex;
+    }
+
+    .header{
+        height: 75px;
+        width: calc(100vw - 50px);
+        margin-left: 50px;
+        background-color: rgba( 0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 
 }
