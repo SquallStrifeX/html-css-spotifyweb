@@ -455,6 +455,17 @@ body {
 .margin-bottom_10{
     margin-bottom: 10px;
 }
+
+.hover-white:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.border-home{
+    border-left: 2px solid rgba(173,255,47,255);
+    
+}
+
 /* MEDIA QUERY */
 
 @media  screen and (max-width: 768px) {
