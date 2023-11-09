@@ -27,10 +27,13 @@ body {
 
 .sidebar{
     width: 200px;
+    height: calc(100vh - 75px);
     background-color: black;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .sidebar-top{
@@ -101,7 +104,7 @@ body {
 }
 
 .scroll-playlist{
-    height: 40vh;
+    height: 35vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -227,7 +230,62 @@ body {
 
 .img-player{
     width: 100%;
+    position: relative;
+    opacity: 1;
 }
+
+.img-player:hover + .img-player2{
+    opacity: 0.5;
+}
+
+.img-player2:hover{
+    opacity: 0.5;
+}
+
+.img-player:hover{
+    opacity: 0.5;
+}
+
+.button_header:hover{
+    transform: scale(1.2);
+}
+
+.pallino{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    display: none;
+}
+
+.center-footer_bottom .bar_footer-center2:hover{
+    background-color: lightgreen;
+   
+}
+
+.center-footer_bottom .bar_footer-center2:hover .pallino{
+    display: block;
+  
+}
+
+
+.img-player2{
+    width: 35%;
+    filter: invert(100);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+
+    
+}
+
+.container-player{
+    position: relative;
+}
+
 
 .title-player{
     font-size: 12px;
