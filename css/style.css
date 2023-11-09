@@ -258,14 +258,22 @@ body {
     display: none;
 }
 
-.center-footer_bottom .bar_footer-center2:hover{
+.center-footer_bottom:hover .bar_footer-center2{
     background-color: lightgreen;
    
 }
 
-.center-footer_bottom .bar_footer-center2:hover .pallino{
+.center-footer_bottom:hover .pallino{
     display: block;
   
+}
+
+.footer_right:hover .pallino{
+    display: block;
+}
+
+.footer_right:hover .bar_right2{
+    background-color: lightgreen;
 }
 
 
